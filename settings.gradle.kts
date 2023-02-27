@@ -8,6 +8,7 @@ pluginManagement {
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
+        mavenLocal()
         google()
         mavenCentral()
         maven {
@@ -23,4 +24,6 @@ enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 rootProject.name = "LifecycleComponentTemplate"
 include(":app")
+include(":main")
+include(":foobar", ":foobar-api", ":sub-foo", ":sub-bar")
 

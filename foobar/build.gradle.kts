@@ -9,15 +9,12 @@ android {
 }
 
 dependencies {
+    implementation(platform(libs.alatan.lifecycle.compose.activity))
+    implementation(libs.alatan.lifecycle.composable.holder)
     implementation(projects.foobarApi)
     implementation(projects.subFoo)
     implementation(projects.subBar)
 
-    implementation(libs.alatan.lifecycle.dagger.composeactivity)
-    implementation(libs.alatan.lifecycle.dagger.scope)
-    implementation(libs.alatan.lifecycle.compose.holder)
-    implementation(libs.alatan.lifecycle.handler.api)
-    implementation(libs.alatan.lifecycle.viewevent.flow)
     implementation(libs.alatan.alerts.common.dialog.api)
     implementation(libs.alatan.resourceprovider.api)
 
@@ -29,10 +26,4 @@ dependencies {
 
     implementation(libs.compose.material)
     implementation(libs.compose.runtimeLiveData)
-//    implementation(libs.androidx.nav.compose)
-//
-//    testImplementation(libs.alatan.lifecycle.handler.assertion)
-//    testImplementation(libs.alatan.lifecycle.viewevent.assertion)
-//    testImplementation(libs.alatan.lifecycle.router.assertion)
-//    testImplementation(libs.alatan.preferences.builder)
 }

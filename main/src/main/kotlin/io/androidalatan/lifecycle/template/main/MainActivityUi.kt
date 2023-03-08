@@ -12,11 +12,11 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import io.androidalatan.component.view.compose.api.view.onClick
 import io.androidalatan.lifecycle.handler.compose.activity.localowners.LocalComposeEventTriggerOwner
-import io.androidalatan.lifecycle.handler.compose.util.lifecycleViewModel
+import io.androidalatan.lifecycle.handler.compose.cache.cached
 
 object MainActivityUi {
     @Composable
-    fun Content(viewModel: MainActivityViewModel = lifecycleViewModel()) {
+    fun Content(viewModel: MainActivityViewModel = cached()) {
         val resumeText by viewModel.resumeText.observeAsState("")
         val createText by viewModel.createText.observeAsState("")
         Column(

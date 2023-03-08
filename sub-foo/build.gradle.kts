@@ -17,7 +17,6 @@ dependencies {
     implementation(libs.alatan.lifecycle.compose.holder)
     implementation(libs.alatan.lifecycle.handler.api)
     implementation(libs.alatan.lifecycle.handler.annotation)
-    implementation(libs.alatan.lifecycle.handler.composeutil)
     implementation(libs.alatan.lifecycle.viewevent.compose.ext.api)
     implementation(libs.alatan.lifecycle.viewevent.api)
     implementation(libs.alatan.lifecycle.viewevent.flow)

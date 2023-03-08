@@ -55,6 +55,7 @@ afterEvaluate {
 }
 
 dependencies {
+    implementation(platform(libs.alatan.lifecycle.compose.app))
 
     implementation(libs.androidx.compat)
     implementation(libs.androidx.multidex)
@@ -69,27 +70,6 @@ dependencies {
     implementation(libs.alatan.preferences.annotation)
     implementation(libs.alatan.preferences.api)
     implementation(libs.alatan.preferences.builder)
-
-    implementation(libs.alatan.lifecycle.handler.impl)
-    implementation(libs.alatan.lifecycle.resulthandler.impl)
-    implementation(libs.alatan.lifecycle.bundlecollector.impl)
-    implementation(libs.alatan.lifecycle.requestpermission.impl)
-    implementation(libs.alatan.lifecycle.backkeyhandler.impl)
-    implementation(libs.alatan.lifecycle.viewevent.impl)
-    implementation(libs.alatan.lifecycle.router.impl)
-    implementation(libs.alatan.lifecycle.handler.invoker.api)
-    implementation(libs.alatan.lifecycle.handler.annotation)
-    implementation(libs.alatan.lifecycle.compose.activator)
-    implementation(libs.alatan.lifecycle.compose.holder)
-
-    implementation(libs.alatan.lifecycle.lazyprovider)
-    implementation(libs.alatan.lifecycle.coroutine)
-    implementation(libs.alatan.lifecycle.handler.invoker.api)
-    implementation(libs.alatan.lifecycle.handler.invoker.flow)
-
-    implementation(libs.alatan.lifecycle.dagger.composeactivity)
-    implementation(libs.alatan.lifecycle.dagger.basebuilder)
-    implementation(libs.alatan.lifecycle.dagger.scope)
 
     implementation(libs.alatan.resourceprovider.impl)
     implementation(libs.alatan.alerts.compose.dialog.impl)

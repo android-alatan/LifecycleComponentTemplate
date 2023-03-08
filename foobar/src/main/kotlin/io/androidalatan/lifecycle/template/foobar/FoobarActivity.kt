@@ -15,5 +15,5 @@ class FoobarActivity: ComposeLifecycleDaggerActivity() {
     var bar: Bar by composeCached()
 
     @Composable
-    override fun contentView() = FoobarActivityUi.Content(foo, bar)
+    override fun contentView() = FoobarActivityUi.Content()
 }

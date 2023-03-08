@@ -58,7 +58,7 @@ alatan-coroutine = "0.1.2"
 alatan-resourceprovider = "0.1.2"
 alatan-alerts = "0.1.3"
 alatan-preferences = "0.1.5"
-alatan-lifecyclecomponents = "0.1.10"
+alatan-lifecyclecomponents = "0.1.11"
 # https://github.com/google/dagger
 dagger = "2.45"
 
@@ -116,56 +116,20 @@ dagger-baseCompiler = { module = "com.google.dagger:dagger-compiler", version.re
 dagger-android = { module = "com.google.dagger:dagger-android-support", version.ref = "dagger" }
 dagger-androidCompiler = { module = "com.google.dagger:dagger-android-processor", version.ref = "dagger" }
 
-alatan-lifecycle-compose-activator = { module = "com.github.android-alatan.lifecyclecomponents:composable-lifecycle-listener-activator", version.ref = "alatan.lifecyclecomponents" }
-alatan-lifecycle-compose-holder = { module = "com.github.android-alatan.lifecyclecomponents:composable-holder", version.ref = "alatan.lifecyclecomponents" }
+alatan-lifecycle-compose-app = { module = "com.github.android-alatan.lifecyclecomponents:bom-compose-app", version.ref = "alatan.lifecyclecomponents" }
+alatan-lifecycle-compose-activity = { module = "com.github.android-alatan.lifecyclecomponents:bom-compose-activity", version.ref = "alatan.lifecyclecomponents" }
+alatan-lifecycle-compose-holder = { module = "com.github.android-alatan.lifecyclecomponents:bom-compose-holder", version.ref = "alatan.lifecyclecomponents" }
+alatan-lifecycle-composable-holder = { module = "com.github.android-alatan.lifecyclecomponents:composable-holder", version.ref = "alatan.lifecyclecomponents" }
 
-alatan-lifecycle-dagger-scope = { module = "com.github.android-alatan.lifecyclecomponents:dagger-scope", version.ref = "alatan.lifecyclecomponents" }
-alatan-lifecycle-dagger-basebuilder = { module = "com.github.android-alatan.lifecyclecomponents:dagger-base-builder", version.ref = "alatan.lifecyclecomponents" }
-alatan-lifecycle-dagger-composeactivity = { module = "com.github.android-alatan.lifecyclecomponents:lifecycle-handler-compose-activity-dagger", version.ref = "alatan.lifecyclecomponents" }
-
-alatan-lifecycle-handler-impl = { module = "com.github.android-alatan.lifecyclecomponents:lifecycle-handler-impl", version.ref = "alatan.lifecyclecomponents" }
-alatan-lifecycle-handler-api = { module = "com.github.android-alatan.lifecyclecomponents:lifecycle-handler-api", version.ref = "alatan.lifecyclecomponents" }
-alatan-lifecycle-handler-assertion = { module = "com.github.android-alatan.lifecyclecomponents:lifecycle-handler-assertion", version.ref = "alatan.lifecyclecomponents" }
-alatan-lifecycle-handler-invoker-api = { module = "com.github.android-alatan.lifecyclecomponents:lifecycle-handler-invokeadapter-api", version.ref = "alatan.lifecyclecomponents" }
-alatan-lifecycle-handler-invoker-flow = { module = "com.github.android-alatan.lifecyclecomponents:lifecycle-handler-invokeadapter-flow", version.ref = "alatan.lifecyclecomponents" }
-alatan-lifecycle-handler-annotation = { module = "com.github.android-alatan.lifecyclecomponents:lifecycle-handler-annotations", version.ref = "alatan.lifecyclecomponents" }
-alatan-lifecycle-handler-composeutil = { module = "com.github.android-alatan.lifecyclecomponents:lifecycle-handler-compose-util", version.ref = "alatan.lifecyclecomponents" }
-alatan-lifecycle-handler-composeactivity = { module = "com.github.android-alatan.lifecyclecomponents:lifecycle-handler-compose-activity", version.ref = "alatan.lifecyclecomponents" }
-
-alatan-lifecycle-resulthandler-impl = { module = "com.github.android-alatan.lifecyclecomponents:result-handler", version.ref = "alatan.lifecyclecomponents" }
-alatan-lifecycle-resulthandler-api = { module = "com.github.android-alatan.lifecyclecomponents:result-handler-api", version.ref = "alatan.lifecyclecomponents" }
-alatan-lifecycle-resulthandler-flow = { module = "com.github.android-alatan.lifecyclecomponents:result-handler-flow-adapter", version.ref = "alatan.lifecyclecomponents" }
-alatan-lifecycle-resulthandler-assertion = { module = "com.github.android-alatan.lifecyclecomponents:result-handler-assertion", version.ref = "alatan.lifecyclecomponents" }
-
-alatan-lifecycle-bundlecollector-impl = { module = "com.github.android-alatan.lifecyclecomponents:bundle-collector", version.ref = "alatan.lifecyclecomponents" }
-alatan-lifecycle-bundlecollector-api = { module = "com.github.android-alatan.lifecyclecomponents:bundle-collector-api", version.ref = "alatan.lifecyclecomponents" }
-alatan-lifecycle-bundlecollector-flow = { module = "com.github.android-alatan.lifecyclecomponents:bundle-collector-flow-adapter", version.ref = "alatan.lifecyclecomponents" }
-alatan-lifecycle-bundlecollector-assertion = { module = "com.github.android-alatan.lifecyclecomponents:bundle-collector-assertion", version.ref = "alatan.lifecyclecomponents" }
-
-alatan-lifecycle-backkeyhandler-impl = { module = "com.github.android-alatan.lifecyclecomponents:back-key-handler", version.ref = "alatan.lifecyclecomponents" }
-alatan-lifecycle-backkeyhandler-api = { module = "com.github.android-alatan.lifecyclecomponents:back-key-handler-api", version.ref = "alatan.lifecyclecomponents" }
-alatan-lifecycle-backkeyhandler-flow = { module = "com.github.android-alatan.lifecyclecomponents:back-key-handler-adapter-flow", version.ref = "alatan.lifecyclecomponents" }
-alatan-lifecycle-backkeyhandler-assertion = { module = "com.github.android-alatan.lifecyclecomponents:back-key-handler-assertion", version.ref = "alatan.lifecyclecomponents" }
-
-alatan-lifecycle-viewevent-impl = { module = "com.github.android-alatan.lifecyclecomponents:view-event-viewinteractionstream", version.ref = "alatan.lifecyclecomponents" }
-alatan-lifecycle-viewevent-api = { module = "com.github.android-alatan.lifecyclecomponents:view-event-api", version.ref = "alatan.lifecyclecomponents" }
-alatan-lifecycle-viewevent-flow = { module = "com.github.android-alatan.lifecyclecomponents:view-event-adapter-flow", version.ref = "alatan.lifecyclecomponents" }
-alatan-lifecycle-viewevent-assertion = { module = "com.github.android-alatan.lifecyclecomponents:view-event-assertion", version.ref = "alatan.lifecyclecomponents" }
-alatan-lifecycle-viewevent-compose-impl = { module = "com.github.android-alatan.lifecyclecomponents:view-event-compose-impl", version.ref = "alatan.lifecyclecomponents" }
-alatan-lifecycle-viewevent-compose-ext-api = { module = "com.github.android-alatan.lifecyclecomponents:view-event-compose-extension-api", version.ref = "alatan.lifecyclecomponents" }
-alatan-lifecycle-viewevent-compose-ext-impl = { module = "com.github.android-alatan.lifecyclecomponents:view-event-compose-extension-impl", version.ref = "alatan.lifecyclecomponents" }
-
-alatan-lifecycle-router-impl = { module = "com.github.android-alatan.lifecyclecomponents:router", version.ref = "alatan.lifecyclecomponents" }
 alatan-lifecycle-router-api = { module = "com.github.android-alatan.lifecyclecomponents:router-api", version.ref = "alatan.lifecyclecomponents" }
+
+alatan-lifecycle-handler-assertion = { module = "com.github.android-alatan.lifecyclecomponents:lifecycle-handler-assertion", version.ref = "alatan.lifecyclecomponents" }
+alatan-lifecycle-resulthandler-assertion = { module = "com.github.android-alatan.lifecyclecomponents:result-handler-assertion", version.ref = "alatan.lifecyclecomponents" }
+alatan-lifecycle-bundlecollector-assertion = { module = "com.github.android-alatan.lifecyclecomponents:bundle-collector-assertion", version.ref = "alatan.lifecyclecomponents" }
+alatan-lifecycle-backkeyhandler-assertion = { module = "com.github.android-alatan.lifecyclecomponents:back-key-handler-assertion", version.ref = "alatan.lifecyclecomponents" }
+alatan-lifecycle-viewevent-assertion = { module = "com.github.android-alatan.lifecyclecomponents:view-event-assertion", version.ref = "alatan.lifecyclecomponents" }
 alatan-lifecycle-router-webapi = { module = "com.github.android-alatan.lifecyclecomponents:router-web-api", version.ref = "alatan.lifecyclecomponents" }
 alatan-lifecycle-router-assertion = { module = "com.github.android-alatan.lifecyclecomponents:router-assertion", version.ref = "alatan.lifecyclecomponents" }
-
-alatan-lifecycle-lazyprovider = { module = "com.github.android-alatan.lifecyclecomponents:lazy-provider", version.ref = "alatan.lifecyclecomponents" }
-alatan-lifecycle-coroutine = { module = "com.github.android-alatan.lifecyclecomponents:coroutine-api", version.ref = "alatan.lifecyclecomponents" }
-
-alatan-lifecycle-requestpermission-impl = { module = "com.github.android-alatan.lifecyclecomponents:request-permission", version.ref = "alatan.lifecyclecomponents" }
-alatan-lifecycle-requestpermission-api = { module = "com.github.android-alatan.lifecyclecomponents:request-permission-api", version.ref = "alatan.lifecyclecomponents" }
-alatan-lifecycle-requestpermission-flow = { module = "com.github.android-alatan.lifecyclecomponents:request-permission-flow-handler", version.ref = "alatan.lifecyclecomponents" }
 alatan-lifecycle-requestpermission-assertion = { module = "com.github.android-alatan.lifecyclecomponents:request-permission-assertion", version.ref = "alatan.lifecyclecomponents" }
 
 

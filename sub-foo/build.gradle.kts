@@ -9,18 +9,11 @@ android {
 }
 
 dependencies {
+    implementation(platform(libs.alatan.lifecycle.compose.holder))
 
     implementation(libs.compose.material)
     implementation(libs.compose.runtimeLiveData)
 
-    implementation(libs.alatan.lifecycle.router.api)
-    implementation(libs.alatan.lifecycle.compose.holder)
-    implementation(libs.alatan.lifecycle.handler.api)
-    implementation(libs.alatan.lifecycle.handler.annotation)
-    implementation(libs.alatan.lifecycle.viewevent.compose.ext.api)
-    implementation(libs.alatan.lifecycle.viewevent.api)
-    implementation(libs.alatan.lifecycle.viewevent.flow)
-    implementation(libs.alatan.lifecycle.resulthandler.api)
 
     implementation(libs.dagger.android)
     implementation(libs.dagger.base)

@@ -9,13 +9,9 @@ android {
 }
 
 dependencies {
+    implementation(platform(libs.alatan.lifecycle.compose.activity))
     implementation(projects.foobarApi)
 
-    implementation(libs.alatan.lifecycle.dagger.composeactivity)
-    implementation(libs.alatan.lifecycle.dagger.scope)
-    implementation(libs.alatan.lifecycle.compose.holder)
-    implementation(libs.alatan.lifecycle.handler.api)
-    implementation(libs.alatan.lifecycle.viewevent.flow)
     implementation(libs.alatan.alerts.common.dialog.api)
     implementation(libs.alatan.resourceprovider.api)
 

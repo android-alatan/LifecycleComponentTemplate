@@ -10,7 +10,7 @@ kotlinPoet = "1.12.0"
 ksp = "1.8.0-1.0.8"
 # https://github.com/JetBrains/kotlin
 kotlin = "1.8.0"
-agp = "8.0.0-beta04"
+agp = "8.0.0-beta05"
 # https://github.com/mannodermaus/android-junit5
 junit5 = "5.8.2"
 # https://github.com/detekt/detekt
